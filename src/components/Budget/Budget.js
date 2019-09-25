@@ -18,7 +18,7 @@ class Budget extends Component {
     this.props.requestBudgetData()
   }
   render() {
-    const {loading} = this.props.budget
+    const {loading, purchases, budgetLimit} = this.props.budget
     const {firstName, lastName} = this.props.user 
     return (
       <Background>
